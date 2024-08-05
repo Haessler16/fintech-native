@@ -5,12 +5,16 @@ import {
   ThemeProvider,
 } from '@react-navigation/native'
 import { useFonts } from 'expo-font'
-import { Stack } from 'expo-router'
+import { Link, Stack, useRouter } from 'expo-router'
 import * as SplashScreen from 'expo-splash-screen'
 import { useEffect } from 'react'
 import 'react-native-reanimated'
 
 import { useColorScheme } from '@/components/useColorScheme'
+import Colors from '@/constants/Colors'
+import { TouchableOpacity } from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
+import { StatusBar } from 'expo-status-bar'
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -25,11 +29,13 @@ export const unstable_settings = {
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync()
 
-export default function RootLayout() {
+function InitialLayout() {
+  const colorScheme = useColorScheme()
   const [loaded, error] = useFonts({
     // SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     ...FontAwesome.font,
   })
+  const router = useRouter()
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {
@@ -46,19 +52,74 @@ export default function RootLayout() {
     return null
   }
 
-  return <RootLayoutNav />
-}
-
-function RootLayoutNav() {
-  const colorScheme = useColorScheme()
-
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         {/* <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> */}
         {/* <Stack.Screen name="modal" options={{ presentation: 'modal' }} /> */}
         <Stack.Screen name='index' options={{ headerShown: false }} />
+        <Stack.Screen
+          name='signup'
+          options={{
+            title: '',
+            headerBackTitle: '',
+            headerShadowVisible: false,
+            headerStyle: { backgroundColor: Colors.background },
+            headerLeft: () => {
+              return (
+                <TouchableOpacity onPress={router.back}>
+                  <Ionicons name='arrow-back' size={34} color={Colors.dark} />
+                </TouchableOpacity>
+              )
+            },
+          }}
+        />
+        <Stack.Screen
+          name='signin'
+          options={{
+            title: '',
+            headerBackTitle: '',
+            headerShadowVisible: false,
+            headerStyle: { backgroundColor: Colors.background },
+            headerLeft: () => {
+              return (
+                <TouchableOpacity onPress={router.back}>
+                  <Ionicons name='arrow-back' size={34} color={Colors.dark} />
+                </TouchableOpacity>
+              )
+            },
+            headerRight: () => {
+              return (
+                <Link href='/help' asChild>
+                  <TouchableOpacity onPress={router.back}>
+                    <Ionicons
+                      name='help-circle-outline'
+                      size={34}
+                      color={Colors.dark}
+                    />
+                  </TouchableOpacity>
+                </Link>
+              )
+            },
+          }}
+        />
+
+        <Stack.Screen
+          name='help'
+          options={{ title: 'Help', presentation: 'modal' }}
+        />
       </Stack>
     </ThemeProvider>
   )
 }
+
+function RootLayoutNav() {
+  return (
+    <>
+      <StatusBar style='light' />
+      <InitialLayout />
+    </>
+  )
+}
+
+export default RootLayoutNav

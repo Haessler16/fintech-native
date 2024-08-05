@@ -30,7 +30,7 @@
     },
     "plugins": [
       "expo-router",
-      "expo-asset"
+      ["expo-asset", { "assets": ["./assets/videos/intro.mp4"] }]
     ],
     "experiments": {
       "typedRoutes": true
