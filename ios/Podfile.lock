@@ -220,6 +220,8 @@ PODS:
     - Yoga
   - ExpoAsset (10.0.10):
     - ExpoModulesCore
+  - ExpoCrypto (13.0.2):
+    - ExpoModulesCore
   - ExpoFileSystem (17.0.1):
     - ExpoModulesCore
   - ExpoFont (12.0.8):
@@ -227,6 +229,8 @@ PODS:
   - ExpoHead (3.5.18):
     - ExpoModulesCore
   - ExpoKeepAwake (13.0.2):
+    - ExpoModulesCore
+  - ExpoLocalAuthentication (14.0.1):
     - ExpoModulesCore
   - ExpoModulesCore (1.12.18):
     - DoubleConversion
@@ -251,6 +255,8 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - ExpoSecureStore (13.0.2):
+    - ExpoModulesCore
   - ExpoSystemUI (3.0.7):
     - ExpoModulesCore
   - ExpoWebBrowser (13.0.3):
@@ -1524,11 +1530,14 @@ DEPENDENCIES:
   - expo-dev-menu (from `../node_modules/expo-dev-menu`)
   - expo-dev-menu-interface (from `../node_modules/expo-dev-menu-interface/ios`)
   - "ExpoAsset (from `../node_modules/.pnpm/expo-asset@10.0.10_expo@51.0.20/node_modules/expo-asset/ios`)"
+  - "ExpoCrypto (from `../node_modules/.pnpm/expo-crypto@13.0.2_expo@51.0.20/node_modules/expo-crypto/ios`)"
   - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
   - "ExpoFont (from `../node_modules/.pnpm/expo-font@12.0.8_expo@51.0.20/node_modules/expo-font/ios`)"
   - "ExpoHead (from `../node_modules/.pnpm/expo-router@3.5.18_expo-constants@16.0.2_expo-linking@6.3.1_expo-modules-autolinking@1.11.1_e_mfar2myqyigv4jprqrmzo7ewna/node_modules/expo-router/ios`)"
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
+  - "ExpoLocalAuthentication (from `../node_modules/.pnpm/expo-local-authentication@14.0.1_expo@51.0.20/node_modules/expo-local-authentication/ios`)"
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
+  - "ExpoSecureStore (from `../node_modules/.pnpm/expo-secure-store@13.0.2_expo@51.0.20/node_modules/expo-secure-store/ios`)"
   - "ExpoSystemUI (from `../node_modules/.pnpm/expo-system-ui@3.0.7_expo@51.0.20/node_modules/expo-system-ui/ios`)"
   - "ExpoWebBrowser (from `../node_modules/.pnpm/expo-web-browser@13.0.3_expo@51.0.20/node_modules/expo-web-browser/ios`)"
   - "EXSplashScreen (from `../node_modules/.pnpm/expo-splash-screen@0.27.5_expo-modules-autolinking@1.11.1_expo@51.0.20/node_modules/expo-splash-screen/ios`)"
@@ -1621,6 +1630,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-dev-menu-interface/ios"
   ExpoAsset:
     :path: "../node_modules/.pnpm/expo-asset@10.0.10_expo@51.0.20/node_modules/expo-asset/ios"
+  ExpoCrypto:
+    :path: "../node_modules/.pnpm/expo-crypto@13.0.2_expo@51.0.20/node_modules/expo-crypto/ios"
   ExpoFileSystem:
     :path: "../node_modules/expo-file-system/ios"
   ExpoFont:
@@ -1629,8 +1640,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/.pnpm/expo-router@3.5.18_expo-constants@16.0.2_expo-linking@6.3.1_expo-modules-autolinking@1.11.1_e_mfar2myqyigv4jprqrmzo7ewna/node_modules/expo-router/ios"
   ExpoKeepAwake:
     :path: "../node_modules/expo-keep-awake/ios"
+  ExpoLocalAuthentication:
+    :path: "../node_modules/.pnpm/expo-local-authentication@14.0.1_expo@51.0.20/node_modules/expo-local-authentication/ios"
   ExpoModulesCore:
     :path: "../node_modules/expo-modules-core"
+  ExpoSecureStore:
+    :path: "../node_modules/.pnpm/expo-secure-store@13.0.2_expo@51.0.20/node_modules/expo-secure-store/ios"
   ExpoSystemUI:
     :path: "../node_modules/.pnpm/expo-system-ui@3.0.7_expo@51.0.20/node_modules/expo-system-ui/ios"
   ExpoWebBrowser:
@@ -1766,11 +1781,14 @@ SPEC CHECKSUMS:
   expo-dev-menu: 9b9886b383163f14821e624f3eb51a2084491aa2
   expo-dev-menu-interface: be32c09f1e03833050f0ee290dcc86b3ad0e73e4
   ExpoAsset: 323700f291684f110fb55f0d4022a3362ea9f875
+  ExpoCrypto: 156078f266bf28f80ecf5e2a9c3a0d6ffce07a1c
   ExpoFileSystem: 80bfe850b1f9922c16905822ecbf97acd711dc51
   ExpoFont: b3630aff6bfb29ae3c261412f0796813a522cca9
   ExpoHead: 7880300d9c1519420530cf591d333d3f96ff9f6e
   ExpoKeepAwake: 3b8815d9dd1d419ee474df004021c69fdd316d08
+  ExpoLocalAuthentication: 9e02a56a4cf9868f0052656a93d4c94101a42ed7
   ExpoModulesCore: 30e1ed4659356cb9a84e0e5ddf1d090d735973c1
+  ExpoSecureStore: 060cebcb956b80ddae09821610ac1aa9e1ac74cd
   ExpoSystemUI: d4f065a016cae6721b324eb659cdee4d4cf0cb26
   ExpoWebBrowser: 7595ccac6938eb65b076385fd23d035db9ecdc8e
   EXSplashScreen: fbf0ec78e9cee911df188bf17b4fe51d15a84b87

@@ -11,21 +11,44 @@ import {
 import { defaultStyles } from '@/constants/Styles'
 import Colors from '@/constants/Colors'
 import { useState } from 'react'
-import { Link } from 'expo-router'
+import { Link, useRouter } from 'expo-router'
+import { useSignUp } from '@clerk/clerk-expo'
 
 const Signup = () => {
-  const [conuntryCode, setContryCode] = useState('+49')
+  const router = useRouter()
+  const [conuntryCode, setContryCode] = useState('+58')
   const [phoneNumber, setPhoneNumber] = useState('')
+
+  const { signUp } = useSignUp()
 
   const keyboardVerticalOffset = Platform.OS === 'ios' ? 80 : 0
 
-  const onSignup = async () => {}
+  const onSignup = async () => {
+    const fullPhoneNumber = `${conuntryCode}${phoneNumber}`
+
+    // router.push({
+    //   pathname: '/verify/[phone]',
+    //   params: { phone: fullPhoneNumber },
+    // })
+    try {
+      await signUp!.create({
+        phoneNumber: fullPhoneNumber,
+      })
+      await signUp!.preparePhoneNumberVerification()
+      router.push({
+        pathname: '/verify/[phone]',
+        params: { phone: fullPhoneNumber },
+      })
+    } catch (error) {
+      console.error('Error:', error)
+    }
+  }
 
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}
       behavior='padding'
-      keyboardVerticalOffset={80}>
+      keyboardVerticalOffset={keyboardVerticalOffset}>
       <View style={defaultStyles.container}>
         <Text style={defaultStyles.header}>Lets get started!</Text>
         <Text style={defaultStyles.descriptionText}>
@@ -38,6 +61,7 @@ const Signup = () => {
             placeholder='Country'
             placeholderTextColor={Colors.gray}
             value={conuntryCode}
+            onChangeText={setContryCode}
           />
           <TextInput
             style={[styles.input, { flex: 1 }]}
@@ -57,6 +81,7 @@ const Signup = () => {
         </Link>
 
         <View style={{ flex: 1 }} />
+
         <TouchableOpacity
           style={[
             defaultStyles.pillButton,
