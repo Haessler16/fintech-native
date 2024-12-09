@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
-import { useAssets } from 'expo-asset'
+// import { useAssets } from 'expo-asset'
 import { ResizeMode, Video } from 'expo-av'
 import { Link } from 'expo-router'
 import { defaultStyles } from '@/constants/Styles'
 import Colors from '@/constants/Colors'
 
 export default function Main() {
-  const [assets] = useAssets([require('@/assets/videos/intro.mp4')])
+  // const [assets] = useAssets([require('@/assets/videos/intro.mp4')])
   // const [assets] = useAssets([require('../assets/videos/intro.mp4')])
 
   // console.log({ assets })

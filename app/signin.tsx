@@ -26,7 +26,7 @@ enum SignInType {
 const Signin = () => {
   const keyboardVerticalOffset = Platform.OS === 'ios' ? 80 : 0
 
-  const [conuntryCode, setContryCode] = useState('+49')
+  const [conuntryCode, setContryCode] = useState('+58')
   const [phoneNumber, setPhoneNumber] = useState('')
 
   const router = useRouter()
@@ -83,6 +83,7 @@ const Signin = () => {
             placeholder='Country'
             placeholderTextColor={Colors.gray}
             value={conuntryCode}
+            onChangeText={setContryCode}
           />
           <TextInput
             style={[styles.input, { flex: 1 }]}

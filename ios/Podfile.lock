@@ -22,10 +22,10 @@ PODS:
     - expo-dev-menu
     - expo-dev-menu-interface
     - EXUpdatesInterface
-  - expo-dev-launcher (4.0.21):
+  - expo-dev-launcher (4.0.22):
     - DoubleConversion
     - EXManifests
-    - expo-dev-launcher/Main (= 4.0.21)
+    - expo-dev-launcher/Main (= 4.0.22)
     - expo-dev-menu
     - expo-dev-menu-interface
     - ExpoModulesCore
@@ -51,7 +51,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - expo-dev-launcher/Main (4.0.21):
+  - expo-dev-launcher/Main (4.0.22):
     - DoubleConversion
     - EXManifests
     - expo-dev-launcher/Unsafe
@@ -80,7 +80,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - expo-dev-launcher/Unsafe (4.0.21):
+  - expo-dev-launcher/Unsafe (4.0.22):
     - DoubleConversion
     - EXManifests
     - expo-dev-menu
@@ -108,10 +108,10 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - expo-dev-menu (5.0.15):
+  - expo-dev-menu (5.0.16):
     - DoubleConversion
-    - expo-dev-menu/Main (= 5.0.15)
-    - expo-dev-menu/ReactNativeCompatibles (= 5.0.15)
+    - expo-dev-menu/Main (= 5.0.16)
+    - expo-dev-menu/ReactNativeCompatibles (= 5.0.16)
     - glog
     - hermes-engine
     - RCT-Folly (= 2024.01.01.00)
@@ -132,7 +132,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - Yoga
   - expo-dev-menu-interface (1.8.3)
-  - expo-dev-menu/Main (5.0.15):
+  - expo-dev-menu/Main (5.0.16):
     - DoubleConversion
     - EXManifests
     - expo-dev-menu-interface
@@ -158,7 +158,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - expo-dev-menu/ReactNativeCompatibles (5.0.15):
+  - expo-dev-menu/ReactNativeCompatibles (5.0.16):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -179,7 +179,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - expo-dev-menu/SafeAreaView (5.0.15):
+  - expo-dev-menu/SafeAreaView (5.0.16):
     - DoubleConversion
     - ExpoModulesCore
     - glog
@@ -201,7 +201,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - expo-dev-menu/Vendored (5.0.15):
+  - expo-dev-menu/Vendored (5.0.16):
     - DoubleConversion
     - expo-dev-menu/SafeAreaView
     - glog
@@ -237,7 +237,7 @@ PODS:
     - ExpoModulesCore
   - ExpoLocalAuthentication (14.0.1):
     - ExpoModulesCore
-  - ExpoModulesCore (1.12.18):
+  - ExpoModulesCore (1.12.19):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -296,6 +296,9 @@ PODS:
   - hermes-engine (0.74.3):
     - hermes-engine/Pre-built (= 0.74.3)
   - hermes-engine/Pre-built (0.74.3)
+  - MMKV (2.0.0):
+    - MMKVCore (~> 2.0.0)
+  - MMKVCore (2.0.0)
   - RCT-Folly (2024.01.01.00):
     - boost
     - DoubleConversion
@@ -1224,6 +1227,28 @@ PODS:
   - React-Mapbuffer (0.74.3):
     - glog
     - React-debug
+  - react-native-mmkv (2.12.2):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - MMKV (>= 1.3.3)
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - react-native-safe-area-context (4.10.1):
     - React-Core
   - React-nativeconfig (0.74.3)
@@ -1535,27 +1560,27 @@ DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - "EXAV (from `../node_modules/.pnpm/expo-av@14.0.6_expo@51.0.20/node_modules/expo-av/ios`)"
-  - EXConstants (from `../node_modules/expo-constants/ios`)
-  - EXJSONUtils (from `../node_modules/expo-json-utils/ios`)
-  - EXManifests (from `../node_modules/expo-manifests/ios`)
+  - "EXConstants (from `../node_modules/.pnpm/expo-constants@16.0.2_expo@51.0.20/node_modules/expo-constants/ios`)"
+  - "EXJSONUtils (from `../node_modules/.pnpm/expo-json-utils@0.13.1/node_modules/expo-json-utils/ios`)"
+  - "EXManifests (from `../node_modules/.pnpm/expo-manifests@0.14.3_expo@51.0.20/node_modules/expo-manifests/ios`)"
   - "Expo (from `../node_modules/.pnpm/expo@51.0.20_@babel+core@7.24.8_@babel+preset-env@7.24.8/node_modules/expo`)"
   - "expo-dev-client (from `../node_modules/.pnpm/expo-dev-client@4.0.20_expo@51.0.20/node_modules/expo-dev-client/ios`)"
-  - expo-dev-launcher (from `../node_modules/expo-dev-launcher`)
-  - expo-dev-menu (from `../node_modules/expo-dev-menu`)
-  - expo-dev-menu-interface (from `../node_modules/expo-dev-menu-interface/ios`)
+  - "expo-dev-launcher (from `../node_modules/.pnpm/expo-dev-launcher@4.0.22_expo@51.0.20/node_modules/expo-dev-launcher`)"
+  - "expo-dev-menu (from `../node_modules/.pnpm/expo-dev-menu@5.0.16_expo@51.0.20/node_modules/expo-dev-menu`)"
+  - "expo-dev-menu-interface (from `../node_modules/.pnpm/expo-dev-menu-interface@1.8.3_expo@51.0.20/node_modules/expo-dev-menu-interface/ios`)"
   - "ExpoAsset (from `../node_modules/.pnpm/expo-asset@10.0.10_expo@51.0.20/node_modules/expo-asset/ios`)"
   - "ExpoCrypto (from `../node_modules/.pnpm/expo-crypto@13.0.2_expo@51.0.20/node_modules/expo-crypto/ios`)"
-  - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
+  - "ExpoFileSystem (from `../node_modules/.pnpm/expo-file-system@17.0.1_expo@51.0.20/node_modules/expo-file-system/ios`)"
   - "ExpoFont (from `../node_modules/.pnpm/expo-font@12.0.8_expo@51.0.20/node_modules/expo-font/ios`)"
   - "ExpoHead (from `../node_modules/.pnpm/expo-router@3.5.18_expo-constants@16.0.2_expo-linking@6.3.1_expo-modules-autolinking@1.11.1_e_mfar2myqyigv4jprqrmzo7ewna/node_modules/expo-router/ios`)"
-  - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
+  - "ExpoKeepAwake (from `../node_modules/.pnpm/expo-keep-awake@13.0.2_expo@51.0.20/node_modules/expo-keep-awake/ios`)"
   - "ExpoLocalAuthentication (from `../node_modules/.pnpm/expo-local-authentication@14.0.1_expo@51.0.20/node_modules/expo-local-authentication/ios`)"
-  - ExpoModulesCore (from `../node_modules/expo-modules-core`)
+  - "ExpoModulesCore (from `../node_modules/.pnpm/expo-modules-core@1.12.19/node_modules/expo-modules-core`)"
   - "ExpoSecureStore (from `../node_modules/.pnpm/expo-secure-store@13.0.2_expo@51.0.20/node_modules/expo-secure-store/ios`)"
   - "ExpoSystemUI (from `../node_modules/.pnpm/expo-system-ui@3.0.7_expo@51.0.20/node_modules/expo-system-ui/ios`)"
   - "ExpoWebBrowser (from `../node_modules/.pnpm/expo-web-browser@13.0.3_expo@51.0.20/node_modules/expo-web-browser/ios`)"
   - "EXSplashScreen (from `../node_modules/.pnpm/expo-splash-screen@0.27.5_expo-modules-autolinking@1.11.1_expo@51.0.20/node_modules/expo-splash-screen/ios`)"
-  - EXUpdatesInterface (from `../node_modules/expo-updates-interface/ios`)
+  - "EXUpdatesInterface (from `../node_modules/.pnpm/expo-updates-interface@0.16.2_expo@51.0.20/node_modules/expo-updates-interface/ios`)"
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -1586,6 +1611,7 @@ DEPENDENCIES:
   - React-jsitracing (from `../node_modules/react-native/ReactCommon/hermes/executor/`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
+  - react-native-mmkv (from `../node_modules/react-native-mmkv`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
@@ -1622,6 +1648,8 @@ SPEC REPOS:
     - ComputableLayout
     - ContextMenuAuxiliaryPreview
     - DGSwiftUtilities
+    - MMKV
+    - MMKVCore
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1632,37 +1660,37 @@ EXTERNAL SOURCES:
   EXAV:
     :path: "../node_modules/.pnpm/expo-av@14.0.6_expo@51.0.20/node_modules/expo-av/ios"
   EXConstants:
-    :path: "../node_modules/expo-constants/ios"
+    :path: "../node_modules/.pnpm/expo-constants@16.0.2_expo@51.0.20/node_modules/expo-constants/ios"
   EXJSONUtils:
-    :path: "../node_modules/expo-json-utils/ios"
+    :path: "../node_modules/.pnpm/expo-json-utils@0.13.1/node_modules/expo-json-utils/ios"
   EXManifests:
-    :path: "../node_modules/expo-manifests/ios"
+    :path: "../node_modules/.pnpm/expo-manifests@0.14.3_expo@51.0.20/node_modules/expo-manifests/ios"
   Expo:
     :path: "../node_modules/.pnpm/expo@51.0.20_@babel+core@7.24.8_@babel+preset-env@7.24.8/node_modules/expo"
   expo-dev-client:
     :path: "../node_modules/.pnpm/expo-dev-client@4.0.20_expo@51.0.20/node_modules/expo-dev-client/ios"
   expo-dev-launcher:
-    :path: "../node_modules/expo-dev-launcher"
+    :path: "../node_modules/.pnpm/expo-dev-launcher@4.0.22_expo@51.0.20/node_modules/expo-dev-launcher"
   expo-dev-menu:
-    :path: "../node_modules/expo-dev-menu"
+    :path: "../node_modules/.pnpm/expo-dev-menu@5.0.16_expo@51.0.20/node_modules/expo-dev-menu"
   expo-dev-menu-interface:
-    :path: "../node_modules/expo-dev-menu-interface/ios"
+    :path: "../node_modules/.pnpm/expo-dev-menu-interface@1.8.3_expo@51.0.20/node_modules/expo-dev-menu-interface/ios"
   ExpoAsset:
     :path: "../node_modules/.pnpm/expo-asset@10.0.10_expo@51.0.20/node_modules/expo-asset/ios"
   ExpoCrypto:
     :path: "../node_modules/.pnpm/expo-crypto@13.0.2_expo@51.0.20/node_modules/expo-crypto/ios"
   ExpoFileSystem:
-    :path: "../node_modules/expo-file-system/ios"
+    :path: "../node_modules/.pnpm/expo-file-system@17.0.1_expo@51.0.20/node_modules/expo-file-system/ios"
   ExpoFont:
     :path: "../node_modules/.pnpm/expo-font@12.0.8_expo@51.0.20/node_modules/expo-font/ios"
   ExpoHead:
     :path: "../node_modules/.pnpm/expo-router@3.5.18_expo-constants@16.0.2_expo-linking@6.3.1_expo-modules-autolinking@1.11.1_e_mfar2myqyigv4jprqrmzo7ewna/node_modules/expo-router/ios"
   ExpoKeepAwake:
-    :path: "../node_modules/expo-keep-awake/ios"
+    :path: "../node_modules/.pnpm/expo-keep-awake@13.0.2_expo@51.0.20/node_modules/expo-keep-awake/ios"
   ExpoLocalAuthentication:
     :path: "../node_modules/.pnpm/expo-local-authentication@14.0.1_expo@51.0.20/node_modules/expo-local-authentication/ios"
   ExpoModulesCore:
-    :path: "../node_modules/expo-modules-core"
+    :path: "../node_modules/.pnpm/expo-modules-core@1.12.19/node_modules/expo-modules-core"
   ExpoSecureStore:
     :path: "../node_modules/.pnpm/expo-secure-store@13.0.2_expo@51.0.20/node_modules/expo-secure-store/ios"
   ExpoSystemUI:
@@ -1672,7 +1700,7 @@ EXTERNAL SOURCES:
   EXSplashScreen:
     :path: "../node_modules/.pnpm/expo-splash-screen@0.27.5_expo-modules-autolinking@1.11.1_expo@51.0.20/node_modules/expo-splash-screen/ios"
   EXUpdatesInterface:
-    :path: "../node_modules/expo-updates-interface/ios"
+    :path: "../node_modules/.pnpm/expo-updates-interface@0.16.2_expo@51.0.20/node_modules/expo-updates-interface/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   fmt:
@@ -1730,6 +1758,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
     :path: "../node_modules/react-native/ReactCommon"
+  react-native-mmkv:
+    :path: "../node_modules/react-native-mmkv"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-nativeconfig:
@@ -1803,8 +1833,8 @@ SPEC CHECKSUMS:
   EXManifests: c1fab4c3237675e7b0299ea8df0bcb14baca4f42
   Expo: 0cab4b4dc73f263c0d4297e993686973725adb7f
   expo-dev-client: d24806e84d072563b0a26537c22ec902443e77d6
-  expo-dev-launcher: ab76344f7a72c7b6bb255280a66202655ecf1965
-  expo-dev-menu: 9b9886b383163f14821e624f3eb51a2084491aa2
+  expo-dev-launcher: 9ec4a77189b7ba5340c26399885887bec84e71f2
+  expo-dev-menu: 02f7aa39ee32f4730815cb5fe0c38d7bfda76ab7
   expo-dev-menu-interface: be32c09f1e03833050f0ee290dcc86b3ad0e73e4
   ExpoAsset: 323700f291684f110fb55f0d4022a3362ea9f875
   ExpoCrypto: 156078f266bf28f80ecf5e2a9c3a0d6ffce07a1c
@@ -1813,7 +1843,7 @@ SPEC CHECKSUMS:
   ExpoHead: 7880300d9c1519420530cf591d333d3f96ff9f6e
   ExpoKeepAwake: 3b8815d9dd1d419ee474df004021c69fdd316d08
   ExpoLocalAuthentication: 9e02a56a4cf9868f0052656a93d4c94101a42ed7
-  ExpoModulesCore: 30e1ed4659356cb9a84e0e5ddf1d090d735973c1
+  ExpoModulesCore: 734c1802786b23c9598f4d15273753a779969368
   ExpoSecureStore: 060cebcb956b80ddae09821610ac1aa9e1ac74cd
   ExpoSystemUI: d4f065a016cae6721b324eb659cdee4d4cf0cb26
   ExpoWebBrowser: 7595ccac6938eb65b076385fd23d035db9ecdc8e
@@ -1823,6 +1853,8 @@ SPEC CHECKSUMS:
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
   hermes-engine: 1f547997900dd0752dc0cc0ae6dd16173c49e09b
+  MMKV: f7d1d5945c8765f97f39c3d121f353d46735d801
+  MMKVCore: c04b296010fcb1d1638f2c69405096aac12f6390
   RCT-Folly: 02617c592a293bd6d418e0a88ff4ee1f88329b47
   RCTDeprecation: 4c7eeb42be0b2e95195563c49be08d0b839d22b4
   RCTRequired: d530a0f489699c8500e944fde963102c42dcd0c2
@@ -1847,6 +1879,7 @@ SPEC CHECKSUMS:
   React-jsitracing: 6b3c8c98313642140530f93c46f5a6ca4530b446
   React-logger: fa92ba4d3a5d39ac450f59be2a3cec7b099f0304
   React-Mapbuffer: 9f68550e7c6839d01411ac8896aea5c868eff63a
+  react-native-mmkv: 8c9a677e64a1ac89b0c6cf240feea528318b3074
   react-native-safe-area-context: dcab599c527c2d7de2d76507a523d20a0b83823d
   React-nativeconfig: fa5de9d8f4dbd5917358f8ad3ad1e08762f01dcb
   React-NativeModulesApple: 585d1b78e0597de364d259cb56007052d0bda5e5
@@ -1879,6 +1912,6 @@ SPEC CHECKSUMS:
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 04f1db30bb810187397fa4c37dd1868a27af229c
 
-PODFILE CHECKSUM: 6a5d3dc9414ca4cf2c7807e107c717cd38cfc3da
+PODFILE CHECKSUM: 0011b45c2f217200449828d23877e99c3bfb3f59
 
 COCOAPODS: 1.15.2

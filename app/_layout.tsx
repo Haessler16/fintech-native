@@ -16,7 +16,7 @@ import { Text, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { StatusBar } from 'expo-status-bar'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
-import { ClerkLoaded, ClerkProvider, useAuth } from '@clerk/clerk-expo'
+import { ClerkProvider, useAuth } from '@clerk/clerk-expo'
 import * as SecureStore from 'expo-secure-store'
 
 export {
